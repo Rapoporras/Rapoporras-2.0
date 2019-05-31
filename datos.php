@@ -65,28 +65,26 @@
 
             <div class="row py-1 justify-content-center">
                 <div class="col-lg-2 col-6 text-center">
-                    <span class="min-chart" id="chart-sales" data-percent="80"><span class="percent"></span></span>
-                    <h5><span class="label pink white-text pr-1 pl-1">   App <i class="fa fa-mobile"></i>   </span></h5>
+                    <span class="min-chart" id="chart-sales" data-percent="75"><span class="percent"></span></span>
+                    <h5><span class="label pink white-text pr-1 pl-1">App <i class="fa fa-mobile"></i></span></h5>
                 </div>
                 <div class="col-lg-2 col-6 text-center">
-                    <span class="min-chart" id="chart-sales2" data-percent="45"><span class="percent"></span></span>
-                    <h5><span class="label blue-grey white-text pr-1 pl-1">    Escritorio <i class="fa fa-html5"></i>   </span></h5>
+                    <span class="min-chart" id="chart-sales2" data-percent="50"><span class="percent"></span></span>
+                    <h5><span class="label blue-grey white-text pr-1 pl-1">Escritorio<i class="fa fa-html5"></i></span></h5>
                 </div>
                 <div class="col-lg-2 col-6 text-center">
-                    <span class="min-chart" id="chart-sales3" data-percent="75"><span class="percent"></span></span>
-                    <h5><span class="label cyan white-text pr-1 pl-1">   Web <i class="fa fa-tv"></i>    </span></h5>
+                    <span class="min-chart" id="chart-sales3" data-percent="80"><span class="percent"></span></span>
+                    <h5><span class="label cyan white-text pr-1 pl-1">Web<i class="fa fa-tv"></i></span></h5>
                 </div>
                 <div class="col-lg-2 col-6 text-center">
-                    <span class="min-chart" id="chart-sales4" data-percent="38"><span class="percent"></span></span>
-                    <h5><span class="label purple white-text pr-1 pl-1">   Videojuegos <i class="fa fa-gamepad"></i>   </span></h5>
+                    <span class="min-chart" id="chart-sales4" data-percent="20"><span class="percent"></span></span>
+                    <h5><span class="label purple white-text pr-1 pl-1">Videojuegos<i class="fa fa-gamepad"></i></span></h5>
                 </div>
                 <div class="col-lg-2 col-6 text-center">
-                    <span class="min-chart" id="chart-sales5" data-percent="20"><span class="percent"></span></span>
-                    <h5><span class="label orange white-text pr-1 pl-1">   Robotica <i class="fa fa-rocket"></i>   </span></h5>
+                    <span class="min-chart" id="chart-sales5" data-percent="35"><span class="percent"></span></span>
+                    <h5><span class="label orange white-text pr-1 pl-1">Robotica<i class="fa fa-rocket"></i></span></h5>
                 </div>
             </div>
-
-
         </section>
 
     </div>
