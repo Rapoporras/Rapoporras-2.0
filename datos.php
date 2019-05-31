@@ -30,7 +30,7 @@
                                     <h4 class="font-weight-bold mt-4 mb-2">
                                         <strong>Sobre mí</strong></h4>
                                     <hr>
-                                    <p>Soy un chico de 25 años, gran amante de los videojuegos y la programación. Nací en Antequera pero vivo en Malaga desde que empece mis estudios. Trabajo desde hace dos años pero siempre con ganas de aprender y emprender proyectos nuevos.</p>
+                                    <p>Soy un chico de 26 años, gran amante de los videojuegos y la programación. Nací en Antequera pero vivo en Marbella desde que empece mis estudios. Trabajo desde hace dos años pero siempre con ganas de aprender y emprender proyectos nuevos.</p>
                                     <hr>
                                     <ul class="list-inline list-unstyled">
                                         <li class="list-inline-item"><a class="icons-sm fb-ic" href="https://www.facebook.com/rapoporras"><i class="fa fa-facebook fa-2x"></i></a></li>
