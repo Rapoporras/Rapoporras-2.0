@@ -1,6 +1,4 @@
 $(document).ready(function () {
-
-    // console.log("hola");
     var consulta = "SELECT cabeceras.codigozona, cabeceras.zona,ROUND(SUM(cabeceras.importefactura),2) AS 'total pedido',ROUND(AVG(cabeceras.importefactura),2) AS 'pedido medio', COUNT(DISTINCT cabeceras.codigocliente) AS 'clientes unicos', COUNT(DISTINCT cabeceras.numeroalbaran) AS 'numero pedidos',0 'Unidades Electricas' FROM cabeceras GROUP BY cabeceras.codigozona ORDER BY cabeceras.codigozona";
 
     cargar_datos(consulta);
@@ -13,11 +11,11 @@ var zonas = [];
 
 function cargar_datos(query) {
 
-     var hola=$.ajax({
+    $.ajax({
         data: {
             datos: query
         },
-        url: 'https://rapoporras.com/ghd/index_ajax.php',
+        url: 'index_ajax.php',
         type: 'post',
         async: false,
         success: function (response) {
@@ -51,13 +49,8 @@ function cargar_datos(query) {
 
             introducir_tabla();
             datos_generales();
-        },
-        error: function(){
-          alert( "Error con el servidor" );
         }
     });
-
-    console.log(hola)
 }
 
 function introducir_tabla() {
@@ -123,7 +116,7 @@ function obtener_electricas() {
             data: {
                 unidades_electricas: query2
             },
-            url: 'https://rapoporras.com/ghd/index_ajax.php',
+            url: 'index_ajax.php',
             type: 'post',
             async: false,
             success: function (response2) {
@@ -148,9 +141,6 @@ function obtener_electricas() {
                 $("#" + id).html(elec);
 
 
-            },
-            error: function(){
-              alert( "Error con el servidor" );
             }
         });
     }
@@ -166,7 +156,7 @@ function obtener_objetivos() {
         data: {
             objetivosseleccion: query3
         },
-        url: 'https://rapoporras.com/ghd/index_ajax.php',
+        url: 'index_ajax.php',
         type: 'post',
         async: false,
         success: function (response3) {
@@ -199,9 +189,6 @@ function obtener_objetivos() {
 
 
 
-        },
-        error: function(){
-          alert( "Error con el servidor" );
         }
     });
 
@@ -216,7 +203,7 @@ function datos_generales() {
         data: {
             datos_generales: query4
         },
-        url: 'https://rapoporras.com/ghd/index_ajax.php',
+        url: 'index_ajax.php',
         type: 'post',
         async: false,
         success: function (response4) {
@@ -237,9 +224,6 @@ function datos_generales() {
 
 
             }
-        },
-        error: function(){
-          alert( "Error con el servidor" );
         }
     });
 

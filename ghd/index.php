@@ -12,15 +12,15 @@ include './header.php';
     Como definición de unidad eléctrica es todo artículo que pertenece a las familias 100,101,200,201, 400, 401 o 600
 !-->
 
-<link href="../assets/css/addons/datatables.min.css" rel="stylesheet">
-<link href="../assets/css/addons/datatables-select.min.css" rel="stylesheet">
-<script href="../assets/js/addons/datatables-select.min.js" rel="stylesheet"></script>
-<script href="../assets/js/addons/datatables.min.js" rel="stylesheet"></script>
+<link href="./assets/css/addons/datatables.min.css" rel="stylesheet">
+<link href="./assets/css/addons/datatables-select.min.css" rel="stylesheet">
+<script href="./assets/js/addons/datatables-select.min.js" rel="stylesheet"></script>
+<script href="./assets/js/addons/datatables.min.js" rel="stylesheet"></script>
 
 <main class="pt-1 mx-lg-5">
     <div class="container-fluid z-z-depth-1-half h-auto my-5">
 
-   
+        <!-- <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> -->
             <section>
 
                 <div class="row">
@@ -140,7 +140,7 @@ include './header.php';
 
             </section>
 
-      
+        <!-- </div> -->
 
         <div class="card col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-3">
 
