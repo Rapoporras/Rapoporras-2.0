@@ -19,7 +19,7 @@ function cargar_datos(query) {
         },
         url: 'index_ajax.php',
         type: 'post',
-        async: false,
+        // async: false,
         success: function (response) {
             // console.log(response);
             var datos = new Array();
@@ -120,7 +120,7 @@ function obtener_electricas() {
             },
             url: 'index_ajax.php',
             type: 'post',
-            async: false,
+            // async: false,
             success: function (response2) {
                 // console.log(response2);
 
