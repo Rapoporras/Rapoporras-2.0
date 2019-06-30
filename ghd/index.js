@@ -51,6 +51,9 @@ function cargar_datos(query) {
 
             introducir_tabla();
             datos_generales();
+        },
+        error: function(){
+          alert( "Error con el servidor" );
         }
     });
 
@@ -145,6 +148,9 @@ function obtener_electricas() {
                 $("#" + id).html(elec);
 
 
+            },
+            error: function(){
+              alert( "Error con el servidor" );
             }
         });
     }
@@ -193,6 +199,9 @@ function obtener_objetivos() {
 
 
 
+        },
+        error: function(){
+          alert( "Error con el servidor" );
         }
     });
 
@@ -228,6 +237,9 @@ function datos_generales() {
 
 
             }
+        },
+        error: function(){
+          alert( "Error con el servidor" );
         }
     });
 
