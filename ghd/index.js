@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    console.log("hola");
+    // console.log("hola");
     var consulta = "SELECT cabeceras.codigozona, cabeceras.zona,ROUND(SUM(cabeceras.importefactura),2) AS 'total pedido',ROUND(AVG(cabeceras.importefactura),2) AS 'pedido medio', COUNT(DISTINCT cabeceras.codigocliente) AS 'clientes unicos', COUNT(DISTINCT cabeceras.numeroalbaran) AS 'numero pedidos',0 'Unidades Electricas' FROM cabeceras GROUP BY cabeceras.codigozona ORDER BY cabeceras.codigozona";
 
     cargar_datos(consulta);
@@ -13,7 +13,7 @@ var zonas = [];
 
 function cargar_datos(query) {
 
-    $.ajax({
+     var hola=$.ajax({
         data: {
             datos: query
         },
@@ -53,6 +53,8 @@ function cargar_datos(query) {
             datos_generales();
         }
     });
+
+    console.log(hola)
 }
 
 function introducir_tabla() {
