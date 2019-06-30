@@ -17,9 +17,9 @@ function cargar_datos(query) {
         data: {
             datos: query
         },
-        url: 'index_ajax.php',
+        url: './index_ajax.php',
         type: 'post',
-        // async: false,
+        async: false,
         success: function (response) {
             // console.log(response);
             var datos = new Array();
@@ -118,9 +118,9 @@ function obtener_electricas() {
             data: {
                 unidades_electricas: query2
             },
-            url: 'index_ajax.php',
+            url: './index_ajax.php',
             type: 'post',
-            // async: false,
+            async: false,
             success: function (response2) {
                 // console.log(response2);
 
@@ -158,7 +158,7 @@ function obtener_objetivos() {
         data: {
             objetivosseleccion: query3
         },
-        url: 'index_ajax.php',
+        url: './index_ajax.php',
         type: 'post',
         async: false,
         success: function (response3) {
@@ -205,7 +205,7 @@ function datos_generales() {
         data: {
             datos_generales: query4
         },
-        url: 'index_ajax.php',
+        url: './index_ajax.php',
         type: 'post',
         async: false,
         success: function (response4) {
