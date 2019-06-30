@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var consulta = "SELECT cabeceras.codigozona, cabeceras.zona,ROUND(SUM(cabeceras.importefactura),2) AS 'total pedido',ROUND(AVG(cabeceras.importefactura),2) AS 'pedido medio', COUNT(DISTINCT cabeceras.codigocliente) AS 'clientes unicos', COUNT(DISTINCT cabeceras.numeroalbaran) AS 'numero pedidos',0 'Unidades Electricas' FROM cabeceras GROUP BY cabeceras.codigozona ORDER BY cabeceras.codigozona";
 
-    cargar_datos(consulta);
+    // cargar_datos(consulta);
 
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
@@ -19,7 +19,7 @@ function cargar_datos(query) {
         type: 'post',
         async: false,
         success: function (response) {
-            console.log(response);
+            // console.log(response);
             var datos = new Array();
             datos = JSON.parse(response);
 
