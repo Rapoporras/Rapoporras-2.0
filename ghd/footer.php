@@ -5,8 +5,6 @@
 
 <script type="text/javascript" src="../assets/js/mdb.min.js"></script>
 
-
-<script type="text/javascript" src="../assets\js\addons\datatables.min.js"></script>
 <script type="text/javascript" src="./index.js"></script>
 <script>
     new WOW().init();

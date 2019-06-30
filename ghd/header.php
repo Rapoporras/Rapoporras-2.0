@@ -7,7 +7,7 @@
 
     <meta name="languaje" content="es_ES" />
 
-   
+
 
     <link rel="canonical" href="http://www.rapoporras.com/" />
     <meta charset="utf-8">
@@ -37,8 +37,6 @@
     <meta name="msapplication-TileImage" content="../assets/img/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- MDBootstrap Datatables  -->
-    <link href="../assets\css\addons\datatables.min.css" rel="stylesheet">
 
 </head>
 
