@@ -17,7 +17,7 @@ function cargar_datos(query) {
         data: {
             datos: query
         },
-        url: '../ghd/index_ajax.php',
+        url: 'https://rapoporras.com/ghd/index_ajax.php',
         type: 'post',
         async: false,
         success: function (response) {
@@ -120,7 +120,7 @@ function obtener_electricas() {
             data: {
                 unidades_electricas: query2
             },
-            url: '../ghd/index_ajax.php',
+            url: 'https://rapoporras.com/ghd/index_ajax.php',
             type: 'post',
             async: false,
             success: function (response2) {
@@ -160,7 +160,7 @@ function obtener_objetivos() {
         data: {
             objetivosseleccion: query3
         },
-        url: '../ghd/index_ajax.php',
+        url: 'https://rapoporras.com/ghd/index_ajax.php',
         type: 'post',
         async: false,
         success: function (response3) {
@@ -207,7 +207,7 @@ function datos_generales() {
         data: {
             datos_generales: query4
         },
-        url: '../ghd/index_ajax.php',
+        url: 'https://rapoporras.com/ghd/index_ajax.php',
         type: 'post',
         async: false,
         success: function (response4) {
