@@ -19,7 +19,7 @@ function cargar_datos(query) {
         type: 'post',
         async: false,
         success: function (response) {
-            // console.log(response);
+            console.log(response);
             var datos = new Array();
             datos = JSON.parse(response);
 
