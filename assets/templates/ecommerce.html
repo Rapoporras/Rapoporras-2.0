@@ -9,13 +9,57 @@
   <title>Material Design Bootstrap Template</title>
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap core CSS -->
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="../css/mdb.min.css" rel="stylesheet">
 
   <style>
+
+    html,
+    body,
+    header,
+    .jarallax {
+      height: 700px;
+    }
+
+    @media (max-width: 740px) {
+      html,
+      body,
+      header,
+      .jarallax {
+        height: 100vh;
+      }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+      html,
+      body,
+      header,
+      .jarallax {
+        height: 100vh;
+      }
+    }
+
+    @media (min-width: 560px) and (max-width: 650px) {
+      header .jarallax h1 {
+        margin-bottom: .5rem !important;
+      }
+      header .jarallax h5 {
+        margin-bottom: .5rem !important;
+      }
+    }
+
+    @media (min-width: 660px) and (max-width: 700px) {
+      header .jarallax h1 {
+        margin-bottom: 1.5rem !important;
+      }
+      header .jarallax h5 {
+        margin-bottom: 1.5rem !important;
+      }
+    }
+
     .top-nav-collapse {
       background-color: #7283A7 !important;
     }
@@ -29,14 +73,10 @@
         background: #7283A7 !important;
       }
     }
-
-    @media (max-width: 740px) {
-      .full-height,
-      .full-height body,
-      .full-height header,
-      .full-height header .view {
-        height: 800px;
-      }
+    @media (min-width: 800px) and (max-width: 850px) {
+        .navbar:not(.top-nav-collapse) {
+            background: #7283A7!important;
+        }
     }
 
     footer.page-footer {
@@ -48,6 +88,7 @@
         font-size: 3rem;
       }
     }
+
   </style>
 
 </head>
@@ -63,8 +104,8 @@
         <a class="navbar-brand" href="#">
           <strong>MDB</strong>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
-          aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+          aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
@@ -82,7 +123,7 @@
             </li>
           </ul>
           <form class="form-inline">
-            <div class="md-form mt-0">
+            <div class="md-form my-0">
               <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
             </div>
           </form>
@@ -91,20 +132,19 @@
     </nav>
 
     <!-- Intro Section -->
-    <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(https://mdbootstrap.com/img/Photos/Others/model-3.jpg);">
-      <div class="full-bg-img rgba-white-light">
-        <div class="mask rgba-white-light">
-          <div class="container flex-center">
-            <div class="row pt-5 mt-3">
-              <div class="col-md-12 mb-3">
-                <div class="intro-info-content text-center">
-                  <h1 class="display-3 mb-5 wow fadeInDown" data-wow-delay="0.3s">NEW
-                    <a class="indigo-text font-weight-bold">COLLECTION</a>
-                  </h1>
-                  <h5 class="text-uppercase mb-5 mt-1 font-weight-bold wow fadeInDown" data-wow-delay="0.3s">Free delivery & special prices</h5>
-                  <a class="btn btn-outline-indigo btn-lg wow fadeInDown" data-wow-delay="0.3s">Shop</a>
-                  <a class="btn btn-indigo btn-lg wow fadeInDown" data-wow-delay="0.3s">Lookbook</a>
-                </div>
+    <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(https://mdbootstrap.com/img/Photos/Others/model-3.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <div class="mask rgba-white-light">
+        <div class="container h-100 d-flex justify-content-center align-items-center">
+          <div class="row pt-5 mt-3">
+            <div class="col-md-12 mb-3">
+              <div class="intro-info-content text-center">
+                <h1 class="display-3 mb-5 wow fadeInDown" data-wow-delay="0.3s">NEW
+                  <a class="indigo-text font-weight-bold">COLLECTION</a>
+                </h1>
+                <h5 class="text-uppercase mb-5 mt-1 font-weight-bold wow fadeInDown" data-wow-delay="0.3s">Free
+                  delivery & special prices</h5>
+                <a class="btn btn-outline-indigo btn-lg wow fadeInDown" data-wow-delay="0.3s">Shop</a>
+                <a class="btn btn-indigo btn-lg wow fadeInDown" data-wow-delay="0.3s">Lookbook</a>
               </div>
             </div>
           </div>
@@ -125,9 +165,10 @@
       <section class="section pb-3 wow fadeIn" data-wow-delay="0.3s">
 
         <!--Section heading-->
-        <h1 class="section-heading h1 pt-4">Our bestsellers</h1>
+        <h1 class="font-weight-bold text-center h1 my-5">Our bestsellers</h1>
         <!--Section description-->
-        <p class="section-description mb-5 pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse
+        <p class="text-center grey-text mb-5 mx-auto w-responsive">Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Fugit, error amet numquam iure provident voluptate esse
           quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.</p>
 
         <!--Grid row-->
@@ -141,7 +182,8 @@
 
               <!--Card image-->
               <div class="view overlay z-depth-1">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(36).jpg" class="img-fluid" alt="">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(36).jpg" class="card-img-top"
+                  alt="">
                 <a>
                   <div class="mask rgba-white-slight"></div>
                 </a>
@@ -171,7 +213,7 @@
                   </span>
                   <span class="float-right">
                     <a class="" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
-                      <i class="fa fa-heart"></i>
+                      <i class="fas fa-heart"></i>
                     </a>
                   </span>
                 </div>
@@ -193,7 +235,8 @@
 
               <!--Card image-->
               <div class="view overlay z-depth-1">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(37).jpg" class="img-fluid" alt="">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(37).jpg" class="card-img-top"
+                  alt="">
                 <a>
                   <div class="mask rgba-white-slight"></div>
                 </a>
@@ -223,7 +266,7 @@
                   </span>
                   <span class="float-right">
                     <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
-                      <i class="fa fa-heart"></i>
+                      <i class="fas fa-heart"></i>
                     </a>
                   </span>
                 </div>
@@ -245,7 +288,8 @@
 
               <!--Card image-->
               <div class="view overlay z-depth-1">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(38).jpg" class="img-fluid" alt="">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(38).jpg" class="card-img-top"
+                  alt="">
                 <a>
                   <div class="mask rgba-white-slight"></div>
                 </a>
@@ -275,7 +319,7 @@
                   </span>
                   <span class="float-right">
                     <a class="" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
-                      <i class="fa fa-heart"></i>
+                      <i class="fas fa-heart"></i>
                     </a>
                   </span>
                 </div>
@@ -297,7 +341,8 @@
 
               <!--Card image-->
               <div class="view overlay z-depth-1">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(39).jpg" class="img-fluid" alt="">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(39).jpg" class="card-img-top"
+                  alt="">
                 <a>
                   <div class="mask rgba-white-slight"></div>
                 </a>
@@ -327,7 +372,7 @@
                   </span>
                   <span class="float-right">
                     <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
-                      <i class="fa fa-heart"></i>
+                      <i class="fas fa-heart"></i>
                     </a>
                   </span>
                 </div>
@@ -353,9 +398,10 @@
       <section class="section pb-3 wow fadeIn" data-wow-delay="0.3s">
 
         <!--Section heading-->
-        <h1 class="section-heading h1 pt-4">Last products</h1>
+        <h1 class="font-weight-bold text-center h1 my-5">Last products</h1>
         <!--Section description-->
-        <p class="section-description mb-5 pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse
+        <p class="text-center grey-text mb-5 mx-auto w-responsive">Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Fugit, error amet numquam iure provident voluptate esse
           quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.</p>
 
         <!--Carousel Wrapper-->
@@ -364,10 +410,10 @@
           <!--Controls-->
           <div class="controls-top">
             <a class="btn-floating primary-color" href="#multi-item-example" data-slide="prev">
-              <i class="fa fa-chevron-left"></i>
+              <i class="fas fa-chevron-left"></i>
             </a>
             <a class="btn-floating primary-color" href="#multi-item-example" data-slide="next">
-              <i class="fa fa-chevron-right"></i>
+              <i class="fas fa-chevron-right"></i>
             </a>
           </div>
           <!--Controls-->
@@ -392,8 +438,9 @@
                 <div class="card card-cascade narrower card-ecommerce">
 
                   <!--Card image-->
-                  <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(39).jpg" class="img-fluid" alt="">
+                  <div class="view view-cascade overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(39).jpg" class="card-img-top"
+                      alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
                     </a>
@@ -401,7 +448,7 @@
                   <!--Card image-->
 
                   <!--Card content-->
-                  <div class="card-body text-center no-padding">
+                  <div class="card-body card-body-cascade text-center no-padding">
                     <!--Category & Title-->
                     <a href="" class="text-muted">
                       <h5>Shoes</h5>
@@ -413,7 +460,8 @@
                     </h4>
 
                     <!--Description-->
-                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.
+                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
+                      saepe eveniet ut et voluptates.
                     </p>
 
                     <!--Card footer-->
@@ -421,10 +469,10 @@
                       <span class="float-left">69$</span>
                       <span class="float-right">
                         <a class="" data-toggle="tooltip" data-placement="top" title="Quick Look">
-                          <i class="fa fa-eye"></i>
+                          <i class="fas fa-eye"></i>
                         </a>
                         <a class="" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
+                          <i class="fas fa-heart"></i>
                         </a>
                       </span>
                     </div>
@@ -443,8 +491,9 @@
                 <div class="card card-cascade narrower card-ecommerce">
 
                   <!--Card image-->
-                  <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(22).jpg" class="img-fluid" alt="">
+                  <div class="view view-cascade overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(22).jpg" class="card-img-top"
+                      alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
                     </a>
@@ -452,7 +501,7 @@
                   <!--Card image-->
 
                   <!--Card content-->
-                  <div class="card-body text-center no-padding">
+                  <div class="card-body card-body-cascade text-center no-padding">
                     <!--Category & Title-->
                     <a href="" class="text-muted">
                       <h5>Jeans</h5>
@@ -464,7 +513,8 @@
                     </h4>
 
                     <!--Description-->
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing minima veniam elit. Nam incidunt eius est voluptatibus.
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing minima veniam elit. Nam
+                      incidunt eius est voluptatibus.
                     </p>
 
                     <!--Card footer-->
@@ -472,10 +522,10 @@
                       <span class="float-left">99$</span>
                       <span class="float-right">
                         <a class="" data-toggle="tooltip" data-placement="top" title="Quick Look">
-                          <i class="fa fa-eye"></i>
+                          <i class="fas fa-eye"></i>
                         </a>
                         <a class="" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
+                          <i class="fas fa-heart"></i>
                         </a>
                       </span>
                     </div>
@@ -494,8 +544,8 @@
                 <div class="card card-cascade narrower card-ecommerce">
 
                   <!--Card image-->
-                  <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Others/img%20(31).jpg" class="img-fluid" alt="">
+                  <div class="view view-cascade overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Others/img%20(31).jpg" class="card-img-top" alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
                     </a>
@@ -503,7 +553,7 @@
                   <!--Card image-->
 
                   <!--Card content-->
-                  <div class="card-body text-center no-padding">
+                  <div class="card-body card-body-cascade text-center no-padding">
                     <!--Category & Title-->
                     <a href="" class="text-muted">
                       <h5>Shorts</h5>
@@ -515,7 +565,8 @@
                     </h4>
 
                     <!--Description-->
-                    <p class="card-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                    <p class="card-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia
                       non.
                     </p>
 
@@ -524,10 +575,10 @@
                       <span class="float-left">49$</span>
                       <span class="float-right">
                         <a class="" data-toggle="tooltip" data-placement="top" title="Quick Look">
-                          <i class="fa fa-eye"></i>
+                          <i class="fas fa-eye"></i>
                         </a>
                         <a class="" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
+                          <i class="fas fa-heart"></i>
                         </a>
                       </span>
                     </div>
@@ -552,8 +603,9 @@
                 <div class="card card-cascade narrower card-ecommerce">
 
                   <!--Card image-->
-                  <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(30).jpg" class="img-fluid" alt="">
+                  <div class="view view-cascade overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(30).jpg" class="card-img-top"
+                      alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
                     </a>
@@ -561,7 +613,7 @@
                   <!--Card image-->
 
                   <!--Card content-->
-                  <div class="card-body text-center no-padding">
+                  <div class="card-body card-body-cascade text-center no-padding">
                     <!--Category & Title-->
                     <a href="" class="text-muted">
                       <h5>Accessories</h5>
@@ -573,7 +625,8 @@
                     </h4>
 
                     <!--Description-->
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing minima veniam elit. Nam incidunt eius est voluptatibus.
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing minima veniam elit. Nam
+                      incidunt eius est voluptatibus.
                     </p>
 
                     <!--Card footer-->
@@ -581,10 +634,10 @@
                       <span class="float-left">39$</span>
                       <span class="float-right">
                         <a class="" data-toggle="tooltip" data-placement="top" title="Quick Look">
-                          <i class="fa fa-eye"></i>
+                          <i class="fas fa-eye"></i>
                         </a>
                         <a class="" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
+                          <i class="fas fa-heart"></i>
                         </a>
                       </span>
                     </div>
@@ -603,8 +656,9 @@
                 <div class="card card-cascade narrower card-ecommerce">
 
                   <!--Card image-->
-                  <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(37).jpg" class="img-fluid" alt="">
+                  <div class="view view-cascade overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(37).jpg" class="card-img-top"
+                      alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
                     </a>
@@ -612,7 +666,7 @@
                   <!--Card image-->
 
                   <!--Card content-->
-                  <div class="card-body text-center no-padding">
+                  <div class="card-body card-body-cascade text-center no-padding">
                     <!--Category & Title-->
                     <a href="" class="text-muted">
                       <h5>Shoes</h5>
@@ -624,7 +678,8 @@
                     </h4>
 
                     <!--Description-->
-                    <p class="card-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                    <p class="card-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia
                       non.
                     </p>
 
@@ -633,10 +688,10 @@
                       <span class="float-left">79$</span>
                       <span class="float-right">
                         <a class="" data-toggle="tooltip" data-placement="top" title="Quick Look">
-                          <i class="fa fa-eye"></i>
+                          <i class="fas fa-eye"></i>
                         </a>
                         <a class="" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
+                          <i class="fas fa-heart"></i>
                         </a>
                       </span>
                     </div>
@@ -655,8 +710,9 @@
                 <div class="card card-cascade narrower card-ecommerce">
 
                   <!--Card image-->
-                  <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(31).jpg" class="img-fluid" alt="">
+                  <div class="view view-cascade overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(31).jpg" class="card-img-top"
+                      alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
                     </a>
@@ -664,7 +720,7 @@
                   <!--Card image-->
 
                   <!--Card content-->
-                  <div class="card-body text-center no-padding">
+                  <div class="card-body card-body-cascade text-center no-padding">
                     <!--Category & Title-->
                     <a href="" class="text-muted">
                       <h5>Outerwear</h5>
@@ -676,7 +732,8 @@
                     </h4>
 
                     <!--Description-->
-                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.
+                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
+                      saepe eveniet ut et voluptates.
                     </p>
 
                     <!--Card footer-->
@@ -684,10 +741,10 @@
                       <span class="float-left">149$</span>
                       <span class="float-right">
                         <a class="" data-toggle="tooltip" data-placement="top" title="Quick Look">
-                          <i class="fa fa-eye"></i>
+                          <i class="fas fa-eye"></i>
                         </a>
                         <a class="" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
+                          <i class="fas fa-heart"></i>
                         </a>
                       </span>
                     </div>
@@ -712,8 +769,9 @@
                 <div class="card card-cascade narrower card-ecommerce">
 
                   <!--Card image-->
-                  <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(38).jpg" class="img-fluid" alt="">
+                  <div class="view view-cascade overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(38).jpg" class="card-img-top"
+                      alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
                     </a>
@@ -721,7 +779,7 @@
                   <!--Card image-->
 
                   <!--Card content-->
-                  <div class="card-body text-center no-padding">
+                  <div class="card-body card-body-cascade text-center no-padding">
                     <!--Category & Title-->
                     <a href="" class="text-muted">
                       <h5>Accessories</h5>
@@ -733,7 +791,8 @@
                     </h4>
 
                     <!--Description-->
-                    <p class="card-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                    <p class="card-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia
                       non.
                     </p>
 
@@ -742,10 +801,10 @@
                       <span class="float-left">29$</span>
                       <span class="float-right">
                         <a class="" data-toggle="tooltip" data-placement="top" title="Quick Look">
-                          <i class="fa fa-eye"></i>
+                          <i class="fas fa-eye"></i>
                         </a>
                         <a class="" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
+                          <i class="fas fa-heart"></i>
                         </a>
                       </span>
                     </div>
@@ -764,8 +823,9 @@
                 <div class="card card-cascade narrower card-ecommerce">
 
                   <!--Card image-->
-                  <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/belt.jpg" class="img-fluid" alt="">
+                  <div class="view view-cascade overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/belt.jpg" class="card-img-top"
+                      alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
                     </a>
@@ -773,7 +833,7 @@
                   <!--Card image-->
 
                   <!--Card content-->
-                  <div class="card-body text-center no-padding">
+                  <div class="card-body card-body-cascade text-center no-padding">
                     <!--Category & Title-->
                     <a href="" class="text-muted">
                       <h5>Accessories</h5>
@@ -785,7 +845,8 @@
                     </h4>
 
                     <!--Description-->
-                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.
+                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
+                      saepe eveniet ut et voluptates.
                     </p>
 
                     <!--Card footer-->
@@ -793,10 +854,10 @@
                       <span class="float-left">89$</span>
                       <span class="float-right">
                         <a class="" data-toggle="tooltip" data-placement="top" title="Quick Look">
-                          <i class="fa fa-eye"></i>
+                          <i class="fas fa-eye"></i>
                         </a>
                         <a class="" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
+                          <i class="fas fa-heart"></i>
                         </a>
                       </span>
                     </div>
@@ -815,8 +876,9 @@
                 <div class="card card-cascade narrower card-ecommerce">
 
                   <!--Card image-->
-                  <div class="view overlay">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(57).jpg" class="img-fluid" alt="">
+                  <div class="view view-cascade overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(57).jpg" class="card-img-top"
+                      alt="">
                     <a>
                       <div class="mask rgba-white-slight"></div>
                     </a>
@@ -824,7 +886,7 @@
                   <!--Card image-->
 
                   <!--Card content-->
-                  <div class="card-body text-center no-padding">
+                  <div class="card-body card-body-cascade text-center no-padding">
                     <!--Category & Title-->
                     <a href="" class="text-muted">
                       <h5>Shoes</h5>
@@ -836,7 +898,8 @@
                     </h4>
 
                     <!--Description-->
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing minima veniam elit. Nam incidunt eius est voluptatibus.
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing minima veniam elit. Nam
+                      incidunt eius est voluptatibus.
                     </p>
 
                     <!--Card footer-->
@@ -844,10 +907,10 @@
                       <span class="float-left">129$</span>
                       <span class="float-right">
                         <a class="" data-toggle="tooltip" data-placement="top" title="Quick Look">
-                          <i class="fa fa-eye"></i>
+                          <i class="fas fa-eye"></i>
                         </a>
                         <a class="" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
-                          <i class="fa fa-heart"></i>
+                          <i class="fas fa-heart"></i>
                         </a>
                       </span>
                     </div>
@@ -875,7 +938,7 @@
     </div>
 
     <!-- Streak Section -->
-    <div class="streak streak-photo" style="background-image:url('http://mdbootstrap.com/img/Photos/Others/dress.jpg')">
+    <div class="streak streak-photo" style="background-image:url('https://mdbootstrap.com/img/Photos/Others/dress.jpg')">
 
       <div class="flex-center white-text pattern-1" style="background-attachment: f">
         <ul class="list-unstyled">
@@ -896,11 +959,10 @@
       <section class="text-center pb-5 wow fadeIn">
 
         <!--Section heading-->
-        <h2 class="font-weight-bold h1 mt-5">
-          <strong>Fashion news</strong>
-        </h2>
+        <h2 class="font-weight-bold text-center h1 my-5">Fashion news</h2>
         <!--Section description-->
-        <p class="px-5 mb-5 pb-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        <p class="text-center grey-text mb-5 mx-auto w-responsive">Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
           sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
         <!--Grid row-->
@@ -913,16 +975,18 @@
                 <div>
                   <a href="" class="purple-text">
                     <h5>
-                      <i class="fa fa-plane pr-2"></i>Fashion week</h5>
+                      <i class="fas fa-plane pr-2"></i>Fashion week</h5>
                   </a>
                   <h3 class="mb-4 mt-4">
                     <strong>Project title</strong>
                   </h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quod minima assumenda qui mollitia
-                    architecto soluta at ipsa itaque nam, aliquam minus odit expedita voluptatibus fugiat amet, nostrum error
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quod minima assumenda qui
+                    mollitia
+                    architecto soluta at ipsa itaque nam, aliquam minus odit expedita voluptatibus fugiat amet, nostrum
+                    error
                     dolorum!.</p>
                   <a class="btn btn-secondary btn-sm">
-                    <i class="fa fa-clone left"></i> View project</a>
+                    <i class="fas fa-clone left"></i> View project</a>
                 </div>
               </div>
             </div>
@@ -936,15 +1000,16 @@
                 <div>
                   <a href="" class="pink-text">
                     <h5>
-                      <i class="fa fa-camera pr-2"></i>Street style</h5>
+                      <i class="fas fa-camera pr-2"></i>Street style</h5>
                   </a>
                   <h3 class="mb-4 mt-4">
                     <strong>Project title</strong>
                   </h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem, optio
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                    optio
                     vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.</p>
                   <a class="btn btn-pink btn-sm">
-                    <i class="fa fa-clone left"></i> View project</a>
+                    <i class="fas fa-clone left"></i> View project</a>
                 </div>
               </div>
             </div>
@@ -958,15 +1023,16 @@
                 <div>
                   <a href="" class="green-text">
                     <h5>
-                      <i class="fa fa-eye pr-2"></i>Summer trends</h5>
+                      <i class="fas fa-eye pr-2"></i>Summer trends</h5>
                   </a>
                   <h3 class="mb-4 mt-4">
                     <strong>Project title</strong>
                   </h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem, optio
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                    optio
                     vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.</p>
                   <a class="btn btn-success btn-sm">
-                    <i class="fa fa-clone left"></i> View project</a>
+                    <i class="fas fa-clone left"></i> View project</a>
                 </div>
               </div>
             </div>
@@ -994,7 +1060,8 @@
         <!--First column-->
         <div class="col-md-3 mr-auto">
           <h5 class="text-uppercase mb-3">Footer Content</h5>
-          <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
+          <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet,
+            consectetur
             adipisicing elit.</p>
         </div>
         <!--/.First column-->
@@ -1077,27 +1144,27 @@
 
         <li class="list-inline-item">
           <a class="btn-floating btn-fb">
-            <i class="fa fa-facebook"> </i>
+            <i class="fab fa-facebook-f"> </i>
           </a>
         </li>
         <li class="list-inline-item">
           <a class="btn-floating btn-tw">
-            <i class="fa fa-twitter"> </i>
+            <i class="fab fa-twitter"> </i>
           </a>
         </li>
         <li class="list-inline-item">
           <a class="btn-floating btn-gplus">
-            <i class="fa fa-google-plus"> </i>
+            <i class="fab fa-google-plus-g"> </i>
           </a>
         </li>
         <li class="list-inline-item">
           <a class="btn-floating btn-li">
-            <i class="fa fa-linkedin"> </i>
+            <i class="fab fa-linkedin-in"> </i>
           </a>
         </li>
         <li class="list-inline-item">
           <a class="btn-floating btn-dribbble">
-            <i class="fa fa-dribbble"> </i>
+            <i class="fab fa-dribbble"> </i>
           </a>
         </li>
 
@@ -1108,8 +1175,8 @@
     <!--Copyright-->
     <div class="footer-copyright py-3 text-center">
       <div class="container-fluid">
-        &copy; 2018 Copyright:
-        <a href="https://mdbootstrap.com/material-design-for-bootstrap/"> MDBootstrap.com </a>
+        &copy; 2019 Copyright:
+        <a href="https://mdbootstrap.com/docs/jquery/"> MDBootstrap.com </a>
 
       </div>
     </div>
@@ -1121,7 +1188,7 @@
 
   <!--  SCRIPTS  -->
   <!-- JQuery -->
-  <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="../js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
@@ -1130,6 +1197,7 @@
   <script type="text/javascript" src="../js/mdb.min.js"></script>
   <script>
     new WOW().init();
+
   </script>
 </body>
 

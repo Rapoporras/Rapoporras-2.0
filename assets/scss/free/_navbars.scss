@@ -1,13 +1,11 @@
 // Navbars
 .navbar {
-  @extend .z-depth-1;
-  padding-right: 1rem !important;
+  box-shadow: $z-depth-1;
   font-weight: $navbar-font-weight;
   form {
     .md-form {
       input {
         margin: 0 $navbar-form-input-mr $navbar-form-input-mb $navbar-form-input-ml;
-        // height: $navbar-form-input-height;
       }
     }
   }
@@ -18,7 +16,7 @@
     font-size: $navbar-double-font-size;
     font-weight: $navbar-font-weight;
     .breadcrumb-item {
-      color: $white;
+      color: $white-base;
       &.active {
         color: $navbar-breadcrumb-color;
       }
@@ -31,7 +29,6 @@
     outline: 0;
     border-width: 0;
   }
-  // &.double-nav,
   .nav-flex-icons {
     flex-direction: row;
   }
@@ -51,7 +48,7 @@
           pointer-events: none;
         }
       }
-      .fa {
+      .fas, .fab, .far {
         padding-right: $navbar-flex-icons-padding-lg;
         padding-left: $navbar-flex-icons-padding-lg;
       }
@@ -68,7 +65,15 @@
       padding: $navbar-dropdown-menu-padding;
       font-size: $navbar-dropdown-font-size;
       font-weight: $navbar-font-weight;
-      color: $black !important;
+      color: $black;
+    }
+    form {
+      @media (max-width: $small-screen) {
+        width: 17rem;
+      }
+      @media (min-width: $small-screen) {
+        width: 22rem;
+      }
     }
   }
   &.navbar-light {
@@ -78,7 +83,6 @@
     @include make-navbar($navbar-dark-disabled-color, $navbar-dark-toggler-icon, $white, $navbar-dark-hover-color, $navbar-dark-bg-active-color);
   }
   &.scrolling-navbar {
-    // z-index: 100;
     @media (min-width: $small-screen) {
       transition: $navbar-scrolling-transition;
       padding-top: $navbar-scrolling-padding;
@@ -89,6 +93,16 @@
       &.top-nav-collapse {
         padding-top: $navbar-top-collapse-padding;
         padding-bottom: $navbar-top-collapse-padding;
+      }
+    }
+  }
+  &.fixed-top,
+  &.sticky-top {
+    .navbar-collapse {
+      @media (min-width: 400px) and (max-width: 767px), (min-width: 800px) and (max-width: 850px) {
+        max-height: 340px;
+        overflow-x: hidden;
+        overflow-y: auto;
       }
     }
   }
