@@ -1,6 +1,6 @@
 <?php
 
-include '../assets/functions/functionsAjax.php';
+include 'https://rapoporras.com/assets/functions/functionsAjax.php';
 
 if (isset($_POST["datos"])) {
 
