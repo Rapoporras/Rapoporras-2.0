@@ -43,7 +43,7 @@ function cargar_proyectos(tipo) {
                              <div class="view overlay hm-white-slight z-depth-1-half mb-2">\n\
                                 <img src="' + datos[i]["imagen"] + '" class="img-fluid" alt="First sample image">\n\
 \n\ </div>\n\
-                            <a href="" class="' + datos[i]["color_icono"] + '-text"><h6 class="mb-3 mt-3">' + datos[i]["icono"] + '<strong> ' + datos[i]["tipo"] + '</strong></h6></a>\n\
+                            <div class="' + datos[i]["color_icono"] + '-text"><h6 class="mb-3 mt-3">' + datos[i]["icono"] + '<strong> ' + datos[i]["tipo"] + '</strong></h6></div>\n\
                             <h4 class="mb-3">' + datos[i]["nombre"] + '</h4>\n\
                             <p>' + datos[i]["descripcion"] + '</p>\n\
                          </div>';
