@@ -1,5 +1,3 @@
-
-
 <div class="container">
 
     <section class="section mb-5 pt-5">
@@ -67,7 +65,7 @@
                                                 <label for="form-contact-message">Mensaje</label>
                                                 <a class="btn-floating blue" onclick="enviar_email()"><i class="fa fa-send-o"></i></a>
                                             </div>
-
+                                            <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
                                         </div>
 
                                     </div>
@@ -102,7 +100,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>       
+                    </div>
                 </div>
 
             </div>
